@@ -11,3 +11,9 @@
 .recipe-serving{display:inline-block;margin-bottom:10px;padding:4px 8px;border-radius:999px;background:#fff0ea;color:var(--coral-dark);font-size:.72rem;font-weight:900}
 .meal-recipe-detail b{display:block;margin-top:3px;color:var(--green);font-size:.8rem}
 .meal-recipe-detail ol{margin-top:6px}.meal-recipe-detail ol li{padding-left:2px}
+
+.recipe-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}
+.recipe-category{padding:4px 8px;border-radius:999px;background:#edf6eb;color:var(--green);font-size:.72rem;font-weight:900}
+.recipe-source{color:var(--coral-dark);font-size:.7rem;font-weight:800}
+.recipe-reference{padding:13px 4px;color:var(--muted);font-size:.78rem;line-height:1.6}
+.recipe-reference a{color:var(--coral-dark);font-weight:800}
