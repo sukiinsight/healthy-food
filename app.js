@@ -27,7 +27,7 @@ const weekendLunchPool=[
  ...["닭고기","소고기","새우","두부","참치"].flatMap(main=>["토마토","애호박"].map(veg=>noodle(main,veg,main==="닭고기"?"파스타":"국수"))),
  ...["소고기","닭고기","새우","참치","두부"].flatMap(main=>["브로콜리","파프리카"].map(veg=>friedRice(main,veg))),
  ...["버섯","연어","닭고기","단호박","두부"].flatMap(main=>["브로콜리","양파"].map(veg=>risotto(main,veg))),
- ...["돼지고기","소고기","닭고기","두부","대구"].flatMap(main=>["양배추","감자"].map(veg=>bowl(main,veg)))
+ ...["돼지고기","소고기","닭고기","두부","대구"].flatMap(main=>["배추","감자"].map(veg=>bowl(main,veg)))
 ];
 const dinnerMainPool=[
  ...["닭안심","소고기","돼지안심","연어","대구","삼치","가자미","고등어","두부","새우"].flatMap((main,i)=>[
