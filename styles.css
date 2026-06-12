@@ -20,3 +20,6 @@
 
 .dish-recipe+.dish-recipe{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
 .dish-recipe h4{margin:0 0 9px;color:var(--ink);font-size:1rem}
+
+.recommend-group{margin-top:22px}.recommend-group-title{margin:0 3px 11px}.recommend-group-title h3{margin:0 0 4px;font-size:1.05rem}.recommend-group-title p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.5}.recommend-group-grid{display:grid;gap:12px}
+@media(min-width:650px){.recommend-group-grid{grid-template-columns:repeat(2,1fr)}}
