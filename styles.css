@@ -5,3 +5,9 @@
 .meal-recipe-detail ol{margin:6px 0 0;padding-left:18px}.meal-recipe-detail li+li{margin-top:3px}
 .result-summary{margin:2px 3px 10px;color:var(--muted);font-size:.88rem;line-height:1.5}
 .recipe-needs{margin-top:8px;padding:8px 10px;border-radius:10px;background:#f3f7f1;color:var(--green);font-size:.8rem;font-weight:750}
+
+.meal-recipe-detail ul{margin:6px 0 12px;padding-left:19px}
+.meal-recipe-detail ul li+li{margin-top:3px}
+.recipe-serving{display:inline-block;margin-bottom:10px;padding:4px 8px;border-radius:999px;background:#fff0ea;color:var(--coral-dark);font-size:.72rem;font-weight:900}
+.meal-recipe-detail b{display:block;margin-top:3px;color:var(--green);font-size:.8rem}
+.meal-recipe-detail ol{margin-top:6px}.meal-recipe-detail ol li{padding-left:2px}
