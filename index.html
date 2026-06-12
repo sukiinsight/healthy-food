@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ff8c68">
+  <meta name="description" content="초등학생을 위한 주간 건강 식단과 냉장고 재료 레시피">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <title>한입튼튼</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">우리 아이 건강 식탁</p>
+        <h1>한입튼튼</h1>
+        <p class="hero-copy">이번 주도 맛있고 든든하게 챙겨요.</p>
+      </div>
+      <button id="installButton" class="install-button" hidden>앱 설치</button>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <button class="tab active" data-screen="mealScreen">주간 식단</button>
+      <button class="tab" data-screen="recipeScreen">냉장고 레시피</button>
+      <button class="tab" data-screen="settingsScreen">아이 정보</button>
+    </nav>
+
+    <section id="mealScreen" class="screen active">
+      <div class="section-heading">
+        <div><p class="eyebrow">이번 주</p><h2>7일 건강 식단</h2></div>
+        <button id="refreshMeals" class="secondary-button">새 식단</button>
+      </div>
+      <div id="mealCards" class="meal-cards"></div>
+      <article class="shopping-card">
+        <div class="section-heading compact">
+          <h2>장보기 목록</h2>
+          <button id="copyShopping" class="text-button">목록 복사</button>
+        </div>
+        <div id="shoppingList" class="shopping-list"></div>
+      </article>
+    </section>
+
+    <section id="recipeScreen" class="screen">
+      <div class="section-heading"><div><p class="eyebrow">있는 재료로</p><h2>오늘 뭐 먹지?</h2></div></div>
+      <form id="recipeForm" class="recipe-form">
+        <label for="ingredients">냉장고 속 재료</label>
+        <textarea id="ingredients" rows="4" placeholder="예: 달걀, 두부, 당근, 애호박"></textarea>
+        <label for="timeLimit">조리 시간</label>
+        <select id="timeLimit">
+          <option value="15">15분 이내</option>
+          <option value="30" selected>30분 이내</option>
+          <option value="60">여유 있게</option>
+        </select>
+        <button class="primary-button" type="submit">가능한 요리 찾기</button>
+      </form>
+      <div id="recipeResults" class="recipe-results"></div>
+    </section>
+
+    <section id="settingsScreen" class="screen">
+      <div class="section-heading"><div><p class="eyebrow">맞춤 설정</p><h2>아이 정보</h2></div></div>
+      <form id="profileForm" class="recipe-form">
+        <label for="childGrade">학년</label>
+        <select id="childGrade">
+          <option>초등 1~2학년</option>
+          <option>초등 3~4학년</option>
+          <option>초등 5~6학년</option>
+        </select>
+        <label for="allergies">알레르기 또는 피하는 음식</label>
+        <input id="allergies" placeholder="예: 땅콩, 우유, 새우">
+        <label for="favorites">좋아하는 음식</label>
+        <input id="favorites" placeholder="예: 달걀, 소고기, 토마토">
+        <button class="primary-button" type="submit">정보 저장</button>
+      </form>
+      <p class="notice">알레르기가 심한 경우 제품 표시사항과 의료진의 안내를 먼저 확인해 주세요.</p>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
