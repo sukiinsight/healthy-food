@@ -17,3 +17,6 @@
 .recipe-source{color:var(--coral-dark);font-size:.7rem;font-weight:800}
 .recipe-reference{padding:13px 4px;color:var(--muted);font-size:.78rem;line-height:1.6}
 .recipe-reference a{color:var(--coral-dark);font-weight:800}
+
+.dish-recipe+.dish-recipe{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.dish-recipe h4{margin:0 0 9px;color:var(--ink);font-size:1rem}
